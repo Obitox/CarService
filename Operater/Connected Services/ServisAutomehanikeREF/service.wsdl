@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServisMehanike" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ServisAutomehanikeISPIT" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServisOperater_napraviKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:napraviKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_napraviKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:napraviKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_prijavljivanje_InputMessage">
+    <wsdl:part name="parameters" element="tns:prijavljivanje" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_prijavljivanje_OutputMessage">
+    <wsdl:part name="parameters" element="tns:prijavljivanjeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_napraviAutomobil_InputMessage">
+    <wsdl:part name="parameters" element="tns:napraviAutomobil" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_napraviAutomobil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:napraviAutomobilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_napraviPopravku_InputMessage">
+    <wsdl:part name="parameters" element="tns:napraviPopravku" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_napraviPopravku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:napraviPopravkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_azuriranjeCeneDelova_InputMessage">
+    <wsdl:part name="parameters" element="tns:azuriranjeCeneDelova" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_azuriranjeCeneDelova_OutputMessage">
+    <wsdl:part name="parameters" element="tns:azuriranjeCeneDelovaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_deserijalizujPodatke_InputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujPodatke" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_deserijalizujPodatke_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujPodatkeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_deserijalizujKorisnike_InputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujKorisnike" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_deserijalizujKorisnike_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujKorisnikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_deserijalizujPopravke_InputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujPopravke" />
+  </wsdl:message>
+  <wsdl:message name="IServisOperater_deserijalizujPopravke_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujPopravkeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisKlijent_prijavljivanjeKlijenta_InputMessage">
+    <wsdl:part name="parameters" element="tns:prijavljivanjeKlijenta" />
+  </wsdl:message>
+  <wsdl:message name="IServisKlijent_prijavljivanjeKlijenta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:prijavljivanjeKlijentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisKlijent_prikazPodatakaICena_InputMessage">
+    <wsdl:part name="parameters" element="tns:prikazPodatakaICena" />
+  </wsdl:message>
+  <wsdl:message name="IServisKlijent_prikazPodatakaICena_OutputMessage">
+    <wsdl:part name="parameters" element="tns:prikazPodatakaICenaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisKlijent_deserijalizuj_InputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizuj" />
+  </wsdl:message>
+  <wsdl:message name="IServisKlijent_deserijalizuj_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_prijavljivanjeAdmina_InputMessage">
+    <wsdl:part name="parameters" element="tns:prijavljivanjeAdmina" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_prijavljivanjeAdmina_OutputMessage">
+    <wsdl:part name="parameters" element="tns:prijavljivanjeAdminaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_kreirajKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:kreirajKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_kreirajKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:kreirajKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_izbrisiKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:izbrisiKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_izbrisiKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:izbrisiKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_deserijalizujKorisnikeAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujKorisnikeAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_deserijalizujKorisnikeAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujKorisnikeAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_AzurirajKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:AzurirajKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_AzurirajKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AzurirajKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_kreirajAutomobil_InputMessage">
+    <wsdl:part name="parameters" element="tns:kreirajAutomobil" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_kreirajAutomobil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:kreirajAutomobilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_izbrisiAutomobil_InputMessage">
+    <wsdl:part name="parameters" element="tns:izbrisiAutomobil" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_izbrisiAutomobil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:izbrisiAutomobilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_azurirajAutomobil_InputMessage">
+    <wsdl:part name="parameters" element="tns:azurirajAutomobil" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_azurirajAutomobil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:azurirajAutomobilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_deserijalizujAutomobilAzuriranje_InputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujAutomobilAzuriranje" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_deserijalizujAutomobilAzuriranje_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujAutomobilAzuriranjeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_kreirajPopravku_InputMessage">
+    <wsdl:part name="parameters" element="tns:kreirajPopravku" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_kreirajPopravku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:kreirajPopravkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_izbrisiPopravku_InputMessage">
+    <wsdl:part name="parameters" element="tns:izbrisiPopravku" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_izbrisiPopravku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:izbrisiPopravkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_azurirajPopravku_InputMessage">
+    <wsdl:part name="parameters" element="tns:azurirajPopravku" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_azurirajPopravku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:azurirajPopravkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_deserijalizujPopravkuAzuriranje_InputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujPopravkuAzuriranje" />
+  </wsdl:message>
+  <wsdl:message name="IServisAdmin_deserijalizujPopravkuAzuriranje_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deserijalizujPopravkuAzuriranjeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServisOperater">
+    <wsdl:operation name="napraviKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisOperater/napraviKorisnika" message="tns:IServisOperater_napraviKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisOperater/napraviKorisnikaResponse" message="tns:IServisOperater_napraviKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="prijavljivanje">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisOperater/prijavljivanje" message="tns:IServisOperater_prijavljivanje_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisOperater/prijavljivanjeResponse" message="tns:IServisOperater_prijavljivanje_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="napraviAutomobil">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisOperater/napraviAutomobil" message="tns:IServisOperater_napraviAutomobil_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisOperater/napraviAutomobilResponse" message="tns:IServisOperater_napraviAutomobil_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="napraviPopravku">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisOperater/napraviPopravku" message="tns:IServisOperater_napraviPopravku_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisOperater/napraviPopravkuResponse" message="tns:IServisOperater_napraviPopravku_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="azuriranjeCeneDelova">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisOperater/azuriranjeCeneDelova" message="tns:IServisOperater_azuriranjeCeneDelova_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisOperater/azuriranjeCeneDelovaResponse" message="tns:IServisOperater_azuriranjeCeneDelova_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizujPodatke">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisOperater/deserijalizujPodatke" message="tns:IServisOperater_deserijalizujPodatke_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisOperater/deserijalizujPodatkeResponse" message="tns:IServisOperater_deserijalizujPodatke_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizujKorisnike">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisOperater/deserijalizujKorisnike" message="tns:IServisOperater_deserijalizujKorisnike_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisOperater/deserijalizujKorisnikeResponse" message="tns:IServisOperater_deserijalizujKorisnike_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizujPopravke">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisOperater/deserijalizujPopravke" message="tns:IServisOperater_deserijalizujPopravke_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisOperater/deserijalizujPopravkeResponse" message="tns:IServisOperater_deserijalizujPopravke_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IServisKlijent">
+    <wsdl:operation name="prijavljivanjeKlijenta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisKlijent/prijavljivanjeKlijenta" message="tns:IServisKlijent_prijavljivanjeKlijenta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisKlijent/prijavljivanjeKlijentaResponse" message="tns:IServisKlijent_prijavljivanjeKlijenta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="prikazPodatakaICena">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisKlijent/prikazPodatakaICena" message="tns:IServisKlijent_prikazPodatakaICena_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisKlijent/prikazPodatakaICenaResponse" message="tns:IServisKlijent_prikazPodatakaICena_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizuj">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisKlijent/deserijalizuj" message="tns:IServisKlijent_deserijalizuj_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisKlijent/deserijalizujResponse" message="tns:IServisKlijent_deserijalizuj_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IServisAdmin">
+    <wsdl:operation name="prijavljivanjeAdmina">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/prijavljivanjeAdmina" message="tns:IServisAdmin_prijavljivanjeAdmina_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/prijavljivanjeAdminaResponse" message="tns:IServisAdmin_prijavljivanjeAdmina_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="kreirajKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/kreirajKorisnika" message="tns:IServisAdmin_kreirajKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/kreirajKorisnikaResponse" message="tns:IServisAdmin_kreirajKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="izbrisiKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/izbrisiKorisnika" message="tns:IServisAdmin_izbrisiKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/izbrisiKorisnikaResponse" message="tns:IServisAdmin_izbrisiKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizujKorisnikeAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/deserijalizujKorisnikeAdmin" message="tns:IServisAdmin_deserijalizujKorisnikeAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/deserijalizujKorisnikeAdminResponse" message="tns:IServisAdmin_deserijalizujKorisnikeAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AzurirajKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/AzurirajKorisnika" message="tns:IServisAdmin_AzurirajKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/AzurirajKorisnikaResponse" message="tns:IServisAdmin_AzurirajKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="kreirajAutomobil">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/kreirajAutomobil" message="tns:IServisAdmin_kreirajAutomobil_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/kreirajAutomobilResponse" message="tns:IServisAdmin_kreirajAutomobil_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="izbrisiAutomobil">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/izbrisiAutomobil" message="tns:IServisAdmin_izbrisiAutomobil_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/izbrisiAutomobilResponse" message="tns:IServisAdmin_izbrisiAutomobil_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="azurirajAutomobil">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/azurirajAutomobil" message="tns:IServisAdmin_azurirajAutomobil_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/azurirajAutomobilResponse" message="tns:IServisAdmin_azurirajAutomobil_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizujAutomobilAzuriranje">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/deserijalizujAutomobilAzuriranje" message="tns:IServisAdmin_deserijalizujAutomobilAzuriranje_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/deserijalizujAutomobilAzuriranjeResponse" message="tns:IServisAdmin_deserijalizujAutomobilAzuriranje_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="kreirajPopravku">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/kreirajPopravku" message="tns:IServisAdmin_kreirajPopravku_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/kreirajPopravkuResponse" message="tns:IServisAdmin_kreirajPopravku_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="izbrisiPopravku">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/izbrisiPopravku" message="tns:IServisAdmin_izbrisiPopravku_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/izbrisiPopravkuResponse" message="tns:IServisAdmin_izbrisiPopravku_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="azurirajPopravku">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/azurirajPopravku" message="tns:IServisAdmin_azurirajPopravku_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/azurirajPopravkuResponse" message="tns:IServisAdmin_azurirajPopravku_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizujPopravkuAzuriranje">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServisAdmin/deserijalizujPopravkuAzuriranje" message="tns:IServisAdmin_deserijalizujPopravkuAzuriranje_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServisAdmin/deserijalizujPopravkuAzuriranjeResponse" message="tns:IServisAdmin_deserijalizujPopravkuAzuriranje_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServisOperater" type="tns:IServisOperater">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="napraviKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServisOperater/napraviKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="prijavljivanje">
+      <soap:operation soapAction="http://tempuri.org/IServisOperater/prijavljivanje" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="napraviAutomobil">
+      <soap:operation soapAction="http://tempuri.org/IServisOperater/napraviAutomobil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="napraviPopravku">
+      <soap:operation soapAction="http://tempuri.org/IServisOperater/napraviPopravku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="azuriranjeCeneDelova">
+      <soap:operation soapAction="http://tempuri.org/IServisOperater/azuriranjeCeneDelova" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizujPodatke">
+      <soap:operation soapAction="http://tempuri.org/IServisOperater/deserijalizujPodatke" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizujKorisnike">
+      <soap:operation soapAction="http://tempuri.org/IServisOperater/deserijalizujKorisnike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizujPopravke">
+      <soap:operation soapAction="http://tempuri.org/IServisOperater/deserijalizujPopravke" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IServisKlijent" type="tns:IServisKlijent">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="prijavljivanjeKlijenta">
+      <soap:operation soapAction="http://tempuri.org/IServisKlijent/prijavljivanjeKlijenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="prikazPodatakaICena">
+      <soap:operation soapAction="http://tempuri.org/IServisKlijent/prikazPodatakaICena" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizuj">
+      <soap:operation soapAction="http://tempuri.org/IServisKlijent/deserijalizuj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IServisAdmin" type="tns:IServisAdmin">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="prijavljivanjeAdmina">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/prijavljivanjeAdmina" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kreirajKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/kreirajKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="izbrisiKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/izbrisiKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizujKorisnikeAdmin">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/deserijalizujKorisnikeAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AzurirajKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/AzurirajKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kreirajAutomobil">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/kreirajAutomobil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="izbrisiAutomobil">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/izbrisiAutomobil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="azurirajAutomobil">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/azurirajAutomobil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizujAutomobilAzuriranje">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/deserijalizujAutomobilAzuriranje" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kreirajPopravku">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/kreirajPopravku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="izbrisiPopravku">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/izbrisiPopravku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="azurirajPopravku">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/azurirajPopravku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deserijalizujPopravkuAzuriranje">
+      <soap:operation soapAction="http://tempuri.org/IServisAdmin/deserijalizujPopravkuAzuriranje" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServisMehanike">
+    <wsdl:port name="BasicHttpBinding_IServisOperater" binding="tns:BasicHttpBinding_IServisOperater">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/ServisAutomehanikeISPIT/Service1/" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IServisKlijent" binding="tns:BasicHttpBinding_IServisKlijent">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/ServisAutomehanikeISPIT/Service1/" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IServisAdmin" binding="tns:BasicHttpBinding_IServisAdmin">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/ServisAutomehanikeISPIT/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

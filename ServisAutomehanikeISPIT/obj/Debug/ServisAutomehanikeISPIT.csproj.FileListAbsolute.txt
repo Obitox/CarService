@@ -1,0 +1,6 @@
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\ServisAutomehanikeISPIT\bin\Debug\ServisAutomehanikeISPIT.dll.config
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\ServisAutomehanikeISPIT\bin\Debug\ServisAutomehanikeISPIT.dll
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\ServisAutomehanikeISPIT\bin\Debug\ServisAutomehanikeISPIT.pdb
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\ServisAutomehanikeISPIT\obj\Debug\ServisAutomehanikeISPIT.csprojResolveAssemblyReference.cache
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\ServisAutomehanikeISPIT\obj\Debug\ServisAutomehanikeISPIT.dll
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\ServisAutomehanikeISPIT\obj\Debug\ServisAutomehanikeISPIT.pdb

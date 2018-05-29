@@ -1,0 +1,10 @@
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Operater\bin\Debug\Operater.exe.config
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Operater\bin\Debug\Operater.exe
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Operater\bin\Debug\Operater.pdb
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Operater\obj\Debug\Operater.csprojResolveAssemblyReference.cache
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Operater\obj\Debug\Operater.Form1.resources
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Operater\obj\Debug\Operater.Properties.Resources.resources
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Operater\obj\Debug\Operater.csproj.GenerateResource.Cache
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Operater\obj\Debug\Operater.exe
+c:\users\bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Operater\obj\Debug\Operater.pdb
+C:\Users\Bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Operater\obj\Debug\Operater.OperaterMeni.resources

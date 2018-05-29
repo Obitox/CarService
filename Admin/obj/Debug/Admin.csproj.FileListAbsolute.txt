@@ -1,0 +1,10 @@
+C:\Users\Bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Admin\bin\Debug\Admin.exe.config
+C:\Users\Bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Admin\bin\Debug\Admin.exe
+C:\Users\Bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Admin\bin\Debug\Admin.pdb
+C:\Users\Bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+C:\Users\Bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Admin\obj\Debug\Admin.Prijavljivanje.resources
+C:\Users\Bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Admin\obj\Debug\Admin.Properties.Resources.resources
+C:\Users\Bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Admin\obj\Debug\Admin.csproj.GenerateResource.Cache
+C:\Users\Bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Admin\obj\Debug\Admin.exe
+C:\Users\Bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Admin\obj\Debug\Admin.pdb
+C:\Users\Bojan\documents\visual studio 2017\Projects\ServisAutomehanikeISPIT\Admin\obj\Debug\Admin.AdminMeni.resources

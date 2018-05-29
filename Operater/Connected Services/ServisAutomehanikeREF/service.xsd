@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/ServisAutomehanikeISPIT" />
+  <xs:element name="napraviKorisnika">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServisAutomehanikeISPIT" minOccurs="0" name="korisnik" nillable="true" type="q1:Korisnik" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="napraviKorisnikaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ServisAutomehanikeISPIT" minOccurs="0" name="napraviKorisnikaResult" nillable="true" type="q2:Korisnik" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prijavljivanje">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="korisnicko_ime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lozinka" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prijavljivanjeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="prijavljivanjeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="napraviAutomobil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServisAutomehanikeISPIT" minOccurs="0" name="automobil" nillable="true" type="q3:Automobil" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="napraviAutomobilResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ServisAutomehanikeISPIT" minOccurs="0" name="napraviAutomobilResult" nillable="true" type="q4:Automobil" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="napraviPopravku">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ServisAutomehanikeISPIT" minOccurs="0" name="popravka" nillable="true" type="q5:Popravka" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="napraviPopravkuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="napraviPopravkuResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="azuriranjeCeneDelova">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_popravke" type="xs:int" />
+        <xs:element minOccurs="0" name="novacena" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="azuriranjeCeneDelovaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="azuriranjeCeneDelovaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujPodatke">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujPodatkeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deserijalizujPodatkeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujKorisnike">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujKorisnikeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deserijalizujKorisnikeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujPopravke">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujPopravkeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deserijalizujPopravkeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prijavljivanjeKlijenta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="korisnickoime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lozinka" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prijavljivanjeKlijentaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="prijavljivanjeKlijentaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prikazPodatakaICena">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="korisnickoime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prikazPodatakaICenaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="prikazPodatakaICenaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizuj">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="korisnickomime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deserijalizujResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prijavljivanjeAdmina">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="korisnickoime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lozinka" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prijavljivanjeAdminaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="prijavljivanjeAdminaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="kreirajKorisnika">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ServisAutomehanikeISPIT" minOccurs="0" name="korisnik" nillable="true" type="q6:Korisnik" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="kreirajKorisnikaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ServisAutomehanikeISPIT" minOccurs="0" name="kreirajKorisnikaResult" nillable="true" type="q7:Korisnik" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="izbrisiKorisnika">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="korisnickoime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="izbrisiKorisnikaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="izbrisiKorisnikaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujKorisnikeAdmin">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujKorisnikeAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deserijalizujKorisnikeAdminResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AzurirajKorisnika">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="korisnikZaAzuriranje" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="korisnickoime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lozinka" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AzurirajKorisnikaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AzurirajKorisnikaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="kreirajAutomobil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ServisAutomehanikeISPIT" minOccurs="0" name="automobil" nillable="true" type="q8:Automobil" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="kreirajAutomobilResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ServisAutomehanikeISPIT" minOccurs="0" name="kreirajAutomobilResult" nillable="true" type="q9:Automobil" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="izbrisiAutomobil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_automobila" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="izbrisiAutomobilResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="izbrisiAutomobilResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="azurirajAutomobil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idautomobila" type="xs:int" />
+        <xs:element minOccurs="0" name="podaci" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="korisnickoime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cena_popravke" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="azurirajAutomobilResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="azurirajAutomobilResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujAutomobilAzuriranje">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujAutomobilAzuriranjeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deserijalizujAutomobilAzuriranjeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="kreirajPopravku">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ServisAutomehanikeISPIT" minOccurs="0" name="popravka" nillable="true" type="q10:Popravka" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="kreirajPopravkuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="kreirajPopravkuResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="izbrisiPopravku">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idpopravke" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="izbrisiPopravkuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="izbrisiPopravkuResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="azurirajPopravku">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idpopravkeAzuriranje" type="xs:int" />
+        <xs:element minOccurs="0" name="deo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cena_dela" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="azurirajPopravkuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="azurirajPopravkuResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujPopravkuAzuriranje">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deserijalizujPopravkuAzuriranjeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deserijalizujPopravkuAzuriranjeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
